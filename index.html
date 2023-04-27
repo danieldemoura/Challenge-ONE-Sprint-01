@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <main class="main">
+        <header class="main__header">
+            <ul class="main__avatar">
+                <li>
+                    <img class="main__image" src="./assets/user-image.png" alt="Imagem do desenvolvedor da página">
+                </li>
+                <li class="main__wrapper-menu">
+                    <ul class="main__menu">
+                        <li class="main__item">
+                            <a class="main__link" href="https://www.linkedin.com/in/danieldms/" target="_blank">
+                                <img class="main__social-media" src="./assets/icons-svg/linkedin.svg" alt="Icone do Linkedin">
+                                Linkedin
+                            </a>
+                        </li>
+                        <li class="main__item is-one-row">
+                            <a class="main__link" href="https://github.com/danieldemoura" target="_blank">
+                                <img class="main__social-media" src="./assets/icons-svg/git-hub.svg" alt="Icone do GitHub">
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="main__item">
+                            <a class="main__link" href="https://www.youtube.com/channel/UCHf8h4M94Wnw5o4deGWZKnw" target="_blank">
+                                <img class="main__social-media" src="./assets/icons-svg/youtube.svg" alt="Icone do YouTube">
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h1 class="main__title">Alura ONE Turma 5 - 2023</h1>
+            <button class="main__button is-btn-small js-btn-fullscreen" type="button">
+                <img class="is-icon-svg is-icon-white js-img-fullscreen" src="./assets/icons-svg/full-screen.svg" alt="Imagem representando um botão Full Screen">
+            </button>
+        </header>
+        <div class="main__content">
+            <div class="main__warning">
+                <img class="is-icon-warning is-icon-white" src="./assets/icons-svg/warning.svg" alt="Imagem de um circulo com um ponto de exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="main__wrapper-textarea">
+                <textarea class="main__textarea js-textarea" placeholder="Digite o seu texto!"></textarea>
+            </div>
+            <div class="main__wrapper-button">
+                <button class="is-button-large is-encrypt js-encrypt" type="button">
+                    <img class="is-icon-black" src="./assets/icons-svg/encrypt.svg" alt="Imagem de um cadeado fechado">
+                    Criptografar
+                </button>
+                <button class="is-button-large is-descrypt js-descrypt" type="button">
+                    <img class="is-icon-white" src="./assets/icons-svg/descrypt.svg" alt="Imagem de um cadeado aberto">
+                    Descriptografar
+                </button>
+            </div>
+        </main>
+    </main>
+    <aside class="aside">
+        <header class="aside__header">
+            <a class="is-btn-small" href="https://www.figma.com/community/file/1232402882150231621" target="_blank">
+                <img class="is-icon-svg is-icon-figma is-icon-white" src="./assets/icons-svg/figma.svg" alt="Icone do Figma">
+            </a>
+            <input class="aside__checkbox js-checkbox" id="checkbox" type="checkbox" name="checkbox">
+            <div class="aside__button-toggle">
+                <img class="aside__icon-theme is-icon-white is-moon" src="./assets/icons-svg/moon.svg" alt="Icone da Lua">
+                <img class="aside__icon-theme is-icon-black" src="./assets/icons-svg/sun.svg" alt="Icone do Sol">
+                <label for="checkbox" class="aside__circle js-btn-toggle"></label>
+            </div>
+        </header>
+        <section class="aside__display">
+            <div class="aside__display-text  js-display-text">
+                <div class="aside__image" >
+                    <img src="./assets/icons-svg/illustration.png" alt="Imagem ilustrativa de uma militar de óculos">
+                </div>
+                <div class="aside__message">
+                    <h2 class="aside__title">Nenhuma mensagem encontrada</h2>
+                    <p class="aside__paragraph">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <button class="aside__copy is-button-large is-button-copy js-btn-copy" type="button">
+                <img class="is-icon-black" src="./assets/icons-svg/clipboard.svg" alt="Imagem de uma prancheta">
+                Copiar
+            </button>
+        </section>
+    </aside>
+
+    <script src="./script.js"></script>
+</body>
+</html>
