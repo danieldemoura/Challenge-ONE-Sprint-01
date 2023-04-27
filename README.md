@@ -1,8 +1,9 @@
 <h1 align="center">Challenge ONE Sprint 01 - Turma 5</h1>
 
-<p align="center" >
-    <img src="./.github/one.png" alt="Imagem do programa ONE - Oracle Next Education">
-</p>
+<div align="center" style="display: flex; align-items: center; justify-content: center;">
+    <img widt="30%" src="./.github/one.png" alt="Imagem do programa ONE - Oracle Next Education">
+    <img width="30%" src="./.github/badge.png" alt="Imagem da primeira badge do programa ONE - Oracle Next Education">
+</div>
 
 <p align="center">
   <a href="#-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
