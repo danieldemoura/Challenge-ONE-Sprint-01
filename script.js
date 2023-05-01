@@ -57,16 +57,16 @@ function displayText(text) {
     display.textContent = text;
 }
 
-function checkCapitalLettersAndAccents() {
+function checkLowerCase() {
 
-    const regex = /[A-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚ\p{S}]/u;
-    const capitalAccentsAndSpecialCharacters = regex.test(textArea.value);
+    const regex = /^([a-z\s])+$/;
+    const lowerCase = regex.test(textArea.value);
 
-    if(capitalAccentsAndSpecialCharacters) {
-        alert("Por favor, digite apenas letras minúsculas e sem acento.");
+    if(lowerCase) {
+        encryptText();
         
     } else {
-        encryptText();
+        alert("Por favor, digite apenas letras minúsculas e sem acento.");
     }
 }
 
@@ -175,7 +175,7 @@ function openAndCloseFullScreen(){
 }
 
 buttonToggle.addEventListener("click", toggleTheme);
-buttonEncrypt.addEventListener("click", checkCapitalLettersAndAccents);
+buttonEncrypt.addEventListener("click", checkLowerCase);
 buttonDescrypt.addEventListener("click", descryptText);
 buttonCopy.addEventListener("click", copyText);
 buttonFullScreen.addEventListener("click", openAndCloseFullScreen);
